@@ -1,4 +1,47 @@
 .container {
-
+  border-radius: 20px;
+  padding: 30px;
+  width: 1200px;
 }
 
+.block {
+  background-color: var(--color-text-secondary);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.df {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.p20px {
+  padding: 20px;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.g10px {
+  gap: 10px;
+}
+
+.g20px {
+  gap: 20px;
+}
+
+.border {
+  border: 2px solid var(--color-border-light);
+}
+
+.fww {
+  flex-wrap: wrap;
+}
