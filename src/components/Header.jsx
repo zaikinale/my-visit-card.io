@@ -18,7 +18,7 @@ export default function Header () {
                         <li className="header__item"><a href="#about" className="header__link">Обо мне</a></li>
                         <li className="header__item"><a href="#services" className="header__link">Услуги</a></li>
                         <li className="header__item"><a href="#technologies" className="header__link">Технологии</a></li>
-                        <li className="header__item"><a href="#portfolio" className="header__link">Партфолио</a></li>
+                        <li className="header__item"><a href="#portfolio" className="header__link">Портфолио</a></li>
                         <li className="header__item"><a href="#contacts" className="header__link">Контакты</a></li>
                     </ul>
                 </nav>
