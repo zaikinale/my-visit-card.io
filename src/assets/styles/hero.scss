@@ -1,31 +1,15 @@
-.hero {
-  margin-top: 50px;
-}
-
 .hero__img {
   width: 300px;
   height: 300px;
   object-fit: contain;
   border-radius: 150px;
-  //margin: 0 auto;
 }
 
 .hero__content {
   align-self: flex-start;
   max-width: 500px;
-  //justify-content: space-evenly;
 }
 
-.hero__subtitle {
+.hero__content >* {
   text-align: start;
-}
-
-.hero__text {
-  text-align: start;
-
-}
-
-.hero__btn {
-  text-align: start;
-
 }
