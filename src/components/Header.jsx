@@ -8,8 +8,9 @@ export default function Header () {
     return (
         <header className="header">
             <div className="container df jcsb aic">
-                <a className="header__logotype" href="./index.html">
+                <a className="header__logotype df aic g10" href="./index.html">
                     <img className="header__logo" src={Logotype} alt="A&S"/>
+                    <h2 className="header__title">A&S</h2>
                 </a>
                 <nav className="header__nav">
                     <ul className="header__list df aic g20">
