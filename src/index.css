@@ -43,7 +43,7 @@ li,
 }
 
 body {
-    color: var(--color-text);
+    color: var(--color-bg);
     background-color: var(--color-bg);
     font-size: 1.125rem;
     font-weight: 400;
@@ -72,7 +72,7 @@ h3 {
     margin: 0 0 1rem 0;
 }
 
-p, li {
+p {
     margin: 0 0 1rem 0;
 }
 
