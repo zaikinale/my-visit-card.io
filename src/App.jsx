@@ -5,6 +5,7 @@ import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Services from './components/Services.jsx'
 import Technologies from './components/Technologies.jsx'
+import Portfolio from './components/Portfolio.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Services />
         <Technologies />
+        <Portfolio />
     </>
   )
 }
