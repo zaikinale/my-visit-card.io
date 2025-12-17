@@ -1,0 +1,22 @@
+.contacts {
+  margin-bottom: 30px;
+}
+
+.contacts__content {
+  width: 500px;
+}
+
+.contacts__content >* {
+  text-align: start;
+}
+
+.contacts__link--qr {
+  margin: 0;
+}
+
+.contacts__qr {
+  border-radius: 20px;
+  min-width: 200px;
+  min-height: 200px;
+  object-fit: contain;
+}

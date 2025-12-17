@@ -13,7 +13,7 @@ export default  function Hero() {
                     <h2 className="hero__subtitle">Заикин Алексей Сергеевич <br/> <strong>Frontend-разработчик из Санкт-Петербурга</strong></h2>
 
                     <p className="hero__text">Делаю быстрые, адаптивные и легко поддерживаемые сайты на React + TypeScript</p>
-                    <a href="https://t.me/@A7S_list" className="hero__btn">Написать в Telegram ↗</a>
+                    <a href="https://t.me/A7S_list" className="hero__btn">Написать в Telegram ↗</a>
                 </div>
             </div>
         </main>

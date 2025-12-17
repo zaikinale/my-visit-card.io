@@ -6,6 +6,7 @@ import About from './components/About.jsx'
 import Services from './components/Services.jsx'
 import Technologies from './components/Technologies.jsx'
 import Portfolio from './components/Portfolio.jsx'
+import Contacts from './components/Contacts.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         <Services />
         <Technologies />
         <Portfolio />
+        <Contacts />
     </>
   )
 }
