@@ -1,17 +1,10 @@
 .header {
-  //margin: 20px;
+  display: block;
+  width: 100vw;
   position: sticky;
   top: 0;
+  background-color: var(--color-border-dark);
 }
-
-.container {
-
-}
-
-.header__logotype {
-
-}
-
 .header__logo {
   width: 40px;
   height: 40px;
@@ -20,29 +13,6 @@
 
 .header__title {
   margin: 0;
-}
-
-.header__nav {
-
-}
-
-.header__list {
-
-}
-
-.header__item {
-
-}
-
-.header__link {
-
-}
-
-.header__control {
-
-}
-
-.header__themeToggle {
 }
 
 .header__icon {
@@ -55,8 +25,4 @@
   padding: 8px;
   background-color: var(--color-text-secondary);
   border-radius: 4px;
-}
-
-.header__optionLang {
-
 }
