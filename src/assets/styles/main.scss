@@ -7,12 +7,17 @@
 .block {
   background-color: var(--color-text-secondary);
   border-radius: 20px;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .df {
   display: flex;
 }
+
+.fdc {
+  flex-direction: column;
+}
+
 
 .aic {
   align-items: center;
