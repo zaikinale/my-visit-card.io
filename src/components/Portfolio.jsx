@@ -38,7 +38,7 @@ export default function Portfolio() {
                     <img className="portfolio__img" src="https://via.placeholder.com/600x300/4b6cb7/ffffff?text=Менеджер+задач"
                          alt="Классные проекты"/>
                     <div className="portfolio__info">
-                        <h3>Другие классные проекты у меня на GitHub ↗</h3>
+                        <h3 className='link'>Другие классные проекты у меня на GitHub ↗</h3>
                     </div>
                 </a>
             </div>

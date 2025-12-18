@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   background-color: var(--color-border-dark);
+  z-index: 1000;
 }
 .header__logo {
   width: 40px;

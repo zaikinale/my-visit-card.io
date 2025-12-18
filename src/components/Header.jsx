@@ -14,12 +14,12 @@ export default function Header () {
                 </a>
                 <nav className="header__nav">
                     <ul className="header__list df aic g20">
-                        <li className="header__item"><a href="#main" className="header__link">Привет</a></li>
-                        <li className="header__item"><a href="#about" className="header__link">Обо мне</a></li>
-                        <li className="header__item"><a href="#services" className="header__link">Услуги</a></li>
-                        <li className="header__item"><a href="#tech" className="header__link">Технологии</a></li>
-                        <li className="header__item"><a href="#portfolio" className="header__link">Портфолио</a></li>
-                        <li className="header__item"><a href="#contacts" className="header__link">Контакты</a></li>
+                        <li className="header__item"><a href="#main" className="header__link link">Привет</a></li>
+                        <li className="header__item"><a href="#about" className="header__link link">Обо мне</a></li>
+                        <li className="header__item"><a href="#services" className="header__link link">Услуги</a></li>
+                        <li className="header__item"><a href="#tech" className="header__link link">Технологии</a></li>
+                        <li className="header__item"><a href="#portfolio" className="header__link link">Портфолио</a></li>
+                        <li className="header__item"><a href="#contacts" className="header__link link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div className="header__control df aic g20">

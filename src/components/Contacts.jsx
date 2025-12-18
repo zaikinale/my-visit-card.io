@@ -11,8 +11,8 @@ export default function Contacts() {
                         бюджета.</p>
                     <div className="contacts__links df fdc ais g10">
                         {/*<a href="https://t.me/A7S_list" target="_blank" className="conctacts__link">Telegram ↗</a>*/}
-                        <a href="mailto:zaikinaleks04@mail.ru" className="conctacts__link">Email ↗</a>
-                        <a href="https://github.com/zaikinale" target="_blank" className="conctacts__link">GitHub ↗</a>
+                        <a href="mailto:zaikinaleks04@mail.ru" className="conctacts__link link">Email ↗</a>
+                        <a href="https://github.com/zaikinale" target="_blank" className="conctacts__link link">GitHub ↗</a>
                     </div>
                     <p className="contacts__note">Готов взять первый коммерческий заказ по лояльной цене - в обмен на отзыв и кейс.</p>
                 </div>
