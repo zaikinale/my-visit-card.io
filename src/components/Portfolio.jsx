@@ -12,7 +12,7 @@ export default function Portfolio() {
                          alt="Интернет-магазин"/>
                     <div className="portfolio__info">
                         <h3>Интернет-магазин с бэкендом</h3>
-                        <p>Полноценный e-commerce сайт: каталог, карточки товара, отзывы, авторизация.<br/> Frontend - React + TypeScript, бэкенд - Node.js + PostgreSQL.</p>
+                        <p>Полноценный e-commerce сайт: каталог, карточки товара, отзывы, авторизация.<br/> Frontend - React + TypeScript, Backend - Node.js + PostgreSQL.</p>
                     </div>
                 </a>
 
@@ -21,7 +21,7 @@ export default function Portfolio() {
                          alt="Система лояльности"/>
                     <div className="portfolio__info">
                         <h3>Система лояльности для кофеен</h3>
-                        <p>Веб-интерфейс админки для Telegram-бота: управление клиентами, бонусами, уведомлениями.<br/>Реализовано с использованием React, SCSS (БЭМ), REST API.</p>
+                        <p>Веб-интерфейс админки для Telegram-бота: управление клиентами, острудниками, бонусами и уведомлениями.<br/>Реализовано с использованием Vue, SCSS (БЭМ), FastAPI, Python.</p>
                     </div>
                 </a>
 

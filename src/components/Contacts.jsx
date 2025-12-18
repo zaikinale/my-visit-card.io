@@ -14,8 +14,7 @@ export default function Contacts() {
                         <a href="mailto:zaikinaleks04@mail.ru" className="conctacts__link">Email ↗</a>
                         <a href="https://github.com/zaikinale" target="_blank" className="conctacts__link">GitHub ↗</a>
                     </div>
-                    <p className="contacts__note">Открыт к первым коммерческим заказам! Готов взять проект по лояльной цене
-                        в обмен на отзыв и кейс.</p>
+                    <p className="contacts__note">Готов взять первый коммерческий заказ по лояльной цене - в обмен на отзыв и кейс.</p>
                 </div>
                 <a className="contacts__link--qr" href="http://qrcoder.ru" target="_blank"><img className="contacts__qr"
                     src="http://qrcoder.ru/code/?http%3A%2F%2Ft.me%2FA7S_list&4&0"
