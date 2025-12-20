@@ -13,13 +13,13 @@ export default function Header () {
     }
     return (
         <header className="header">
-            <div className="container df jcsb aic">
+            <div className="container df jcsb aic fww">
                 <a className="header__logotype df aic g10" href="./index.html">
                     <img className="header__logo" src={Logotype} alt="A&S"/>
                     <h2 className="header__title">A&S</h2>
                 </a>
                 <nav className="header__nav">
-                    <ul className="header__list df aic g20">
+                    <ul className="header__list df aic g20 fww">
                         <li className="header__item"><a href="#main" className="header__link link">Привет</a></li>
                         <li className="header__item"><a href="#about" className="header__link link">Обо мне</a></li>
                         <li className="header__item"><a href="#services" className="header__link link">Услуги</a></li>
@@ -28,7 +28,7 @@ export default function Header () {
                         <li className="header__item"><a href="#contacts" className="header__link link">Контакты</a></li>
                     </ul>
                 </nav>
-                <div className="header__control df aic g20">
+                <div className="header__control df aic g20 fww">
                     {/*<button className="header__themeToggle">*/}
                     {/*    <img className="header__icon" src={SunIcon} alt="Светлая тема"/>*/}
                     {/*</button>*/}

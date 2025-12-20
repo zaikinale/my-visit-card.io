@@ -1,7 +1,7 @@
 .container {
   border-radius: 20px;
   padding: 30px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -64,6 +64,10 @@
 
 .fww {
   flex-wrap: wrap;
+}
+
+.fwwr {
+  flex-wrap: wrap-reverse;
 }
 
 .link {
