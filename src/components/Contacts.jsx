@@ -16,7 +16,7 @@ export default function Contacts() {
                     </div>
                     <p className="contacts__note">Готов взять первый коммерческий заказ по лояльной цене - в обмен на отзыв и кейс.</p>
                 </div>
-                <a className="contacts__link--qr" href="http://qrcoder.ru" target="_blank"><img className="contacts__qr"
+                <a className="contacts__link--qr" href="https://t.me/A7S_list" target="_blank"><img className="contacts__qr"
                     src="http://qrcoder.ru/code/?http%3A%2F%2Ft.me%2FA7S_list&4&0"
                     title="QR код"/>Cсылка на Telegram ↗</a>
             </div>

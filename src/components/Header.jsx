@@ -3,8 +3,14 @@ import '../assets/styles/main.scss'
 import Logotype from '../assets/media/icons/logo_xp.jpeg'
 import SunIcon from '../assets/media/icons/sun.svg'
 import LuneIcon from '../assets/media/icons/lune.svg'
+import MenuIcon from '../assets/media/icons/menu.svg'
+import {useState} from "react";
 
 export default function Header () {
+    const [isShow, setIsShow] = useState(false)
+    function handleShow () {
+        setIsShow(r => !r)
+    }
     return (
         <header className="header">
             <div className="container df jcsb aic">
@@ -23,8 +29,11 @@ export default function Header () {
                     </ul>
                 </nav>
                 <div className="header__control df aic g20">
-                    <button className="header__themeToggle">
-                        <img className="header__icon" src={SunIcon} alt="Светлая тема"/>
+                    {/*<button className="header__themeToggle">*/}
+                    {/*    <img className="header__icon" src={SunIcon} alt="Светлая тема"/>*/}
+                    {/*</button>*/}
+                    <button className="header__menu" onClick={handleShow}>
+                        <img src={MenuIcon} alt="Кнопка меню" className="header__icon"/>
                     </button>
                     <select className="header__selectLang" name="select">
                         <option className="header__optionLang" value="russian" selected>RU</option>
