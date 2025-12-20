@@ -29,5 +29,24 @@
 }
 
 .header__control {
+  position: relative;
+}
 
+.header__btn {
+  display: none;
+}
+
+.header__menu {
+  position: absolute;
+  top: 50px;
+}
+
+
+@media (max-width: 900px) {
+  .header__nav {
+    display: none;
+  }
+  .header__btn {
+    display: block;
+  }
 }

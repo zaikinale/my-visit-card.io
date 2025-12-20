@@ -5,3 +5,9 @@
 .services__item {
   width: 49%;
 }
+
+@media (max-width: 900px) {
+    .services__item {
+      width: 100%;
+    }
+}
