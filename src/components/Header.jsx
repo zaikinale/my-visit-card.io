@@ -18,7 +18,7 @@ export default function Header() {
     return (
         <header className="header">
             <div className="container df jcsb aic fww">
-                <a className="header__logotype df aic g10" href="./index.html">
+                <a className="header__logotype df aic g10 link--menu" href="./index.html">
                     <img className="header__logo" src={Logotype} alt="A&S" />
                     <h2 className="header__title">A&S</h2>
                 </a>
@@ -35,10 +35,6 @@ export default function Header() {
                 </nav>
 
                 <div className="header__control df aic g20 fww">
-                    <button className="header__btn link--menu" onClick={handleShow}>
-                        {isShow ? `${t('spectialBtnAndImg.burgerUnAct')}` : <img src={MenuIcon} alt={t('spectialBtnAndImg.burgerAct')} className="header__icon" />}
-                    </button>
-
                     {isShow && (
                         <ul className="header__menu fdc g20 fww block">
                             {/*<li className="header__item"><a onClick={handleShow} href="#main" className="header__link link">{t('nav.main')}</a></li>*/}
@@ -53,6 +49,10 @@ export default function Header() {
                         <option className="header__optionLang" value="ru">RU</option>
                         <option className="header__optionLang" value="en">EN</option>
                     </select>
+
+                    <button className="header__btn link--menu" onClick={handleShow}>
+                        {isShow ? `${t('spectialBtnAndImg.burgerUnAct')}` : <img src={MenuIcon} alt={t('spectialBtnAndImg.burgerAct')} className="header__icon" />}
+                    </button>
                 </div>
             </div>
         </header>
