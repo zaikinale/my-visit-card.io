@@ -1,5 +1,6 @@
 import '../assets/styles/main.scss'
 import '../assets/styles/about.scss'
+import AboutImg from '../assets/media/img/hi.png'
 import { useLanguage } from '../i18n/LanguageContext.jsx';
 
 export default function About() {
@@ -21,6 +22,7 @@ export default function About() {
                     ))}
                 </ul>
             </div>
+            <img src={AboutImg} className="about__art art"/>
         </section>
     )
 }

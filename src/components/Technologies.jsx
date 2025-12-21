@@ -1,6 +1,7 @@
 import '../assets/styles/main.scss'
 import '../assets/styles/tech.scss'
 import {useLanguage} from "../i18n/LanguageContext.jsx";
+import TechImg from "../assets/media/img/wrench.png";
 
 export default function Technologies () {
     const { t, lang } = useLanguage();
@@ -9,6 +10,7 @@ export default function Technologies () {
     return (
         <section id="tech" className='tech'>
             <h2>{t('tech.title')}</h2>
+            <img src={TechImg} className="tech__art art"/>
             <div className="container df fdc aic jcc g20">
                 <div className="tech__group block">
                     <h3>{t('tech.frontend')}</h3>

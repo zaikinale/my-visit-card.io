@@ -1,4 +1,15 @@
+.tech {
+  position: relative;
+}
+
 .tech__group {
   max-width: 700px;
   width: 100%;
+}
+
+.tech__art {
+  position: absolute;
+  top: calc(75%);
+  right: calc(65%);
+  transform: rotate(90deg);
 }

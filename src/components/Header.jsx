@@ -1,9 +1,7 @@
 // Header.jsx
 import '../assets/styles/header.scss';
 import '../assets/styles/main.scss';
-import Logotype from '../assets/media/icons/logo_xp.jpeg';
-import SunIcon from '../assets/media/icons/sun.svg';
-import LuneIcon from '../assets/media/icons/lune.svg';
+import Logotype from '../assets/media/img/logo_xp.jpeg';
 import MenuIcon from '../assets/media/icons/menu.svg';
 import { useState } from "react";
 import { useLanguage } from '../i18n/LanguageContext.jsx'
@@ -25,7 +23,6 @@ export default function Header() {
 
                 <nav className="header__nav">
                     <ul className="header__list df aic g20 fww">
-                        {/*<li className="header__item"><a href="#main" className="header__link link">{t('nav.main')}</a></li>*/}
                         <li className="header__item"><a href="#about" className="header__link link">{t('nav.about')}</a></li>
                         <li className="header__item"><a href="#services" className="header__link link">{t('nav.services')}</a></li>
                         <li className="header__item"><a href="#tech" className="header__link link">{t('nav.tech')}</a></li>
@@ -37,7 +34,6 @@ export default function Header() {
                 <div className="header__control df aic g20 fww">
                     {isShow && (
                         <ul className="header__menu fdc g20 fww block">
-                            {/*<li className="header__item"><a onClick={handleShow} href="#main" className="header__link link">{t('nav.main')}</a></li>*/}
                             <li className="header__item"><a onClick={handleShow} href="#about" className="header__link link">{t('nav.about')}</a></li>
                             <li className="header__item"><a onClick={handleShow} href="#services" className="header__link link">{t('nav.services')}</a></li>
                             <li className="header__item"><a onClick={handleShow} href="#tech" className="header__link link">{t('nav.tech')}</a></li>
