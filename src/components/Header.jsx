@@ -48,9 +48,8 @@ export default function Header() {
                             <li className="header__item"><a onClick={handleShow} href="#contacts" className="header__link link">Контакты</a></li>
                         </ul>
                     )}
-
-                    <select className="header__selectLang" name="select">
-                        <option className="header__optionLang" value="russian" selected>RU</option>
+                    <select className="header__selectLang" defaultValue="russian" name="select">
+                        <option className="header__optionLang" value="russian">RU</option>
                         <option className="header__optionLang" value="english">EN</option>
                     </select>
                 </div>

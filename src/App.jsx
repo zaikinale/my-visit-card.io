@@ -7,6 +7,7 @@ import Services from './components/Services.jsx'
 import Technologies from './components/Technologies.jsx'
 import Portfolio from './components/Portfolio.jsx'
 import Contacts from './components/Contacts.jsx'
+import FadeIn from "./components/FadeIn.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,12 +15,30 @@ function App() {
   return (
     <>
         <Header />
-        <Hero />
-        <About />
-        <Services />
-        <Technologies />
-        <Portfolio />
-        <Contacts />
+
+        <FadeIn>
+            <Hero />
+        </FadeIn>
+
+        <FadeIn>
+            <About />
+        </FadeIn>
+
+        <FadeIn>
+            <Services />
+        </FadeIn>
+
+        <FadeIn>
+            <Technologies />
+        </FadeIn>
+
+        <FadeIn>
+            <Portfolio />
+        </FadeIn>
+
+        <FadeIn>
+            <Contacts />
+        </FadeIn>
     </>
   )
 }
