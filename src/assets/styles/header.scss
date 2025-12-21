@@ -39,6 +39,10 @@
 .header__menu {
   position: absolute;
   top: 50px;
+  left: -35px;
+}
+.header__menu >* {
+  text-align: start;
 }
 
 

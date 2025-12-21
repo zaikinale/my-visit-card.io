@@ -6,10 +6,11 @@ import SunIcon from '../assets/media/icons/sun.svg';
 import LuneIcon from '../assets/media/icons/lune.svg';
 import MenuIcon from '../assets/media/icons/menu.svg';
 import { useState } from "react";
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 export default function Header() {
+    const { t, lang, setLang } = useLanguage();
     const [isShow, setIsShow] = useState(false);
-
     function handleShow() {
         setIsShow(r => !r);
     }
@@ -24,33 +25,33 @@ export default function Header() {
 
                 <nav className="header__nav">
                     <ul className="header__list df aic g20 fww">
-                        <li className="header__item"><a href="#main" className="header__link link">Привет</a></li>
-                        <li className="header__item"><a href="#about" className="header__link link">Обо мне</a></li>
-                        <li className="header__item"><a href="#services" className="header__link link">Услуги</a></li>
-                        <li className="header__item"><a href="#tech" className="header__link link">Технологии</a></li>
-                        <li className="header__item"><a href="#portfolio" className="header__link link">Портфолио</a></li>
-                        <li className="header__item"><a href="#contacts" className="header__link link">Контакты</a></li>
+                        <li className="header__item"><a href="#main" className="header__link link">{t('nav.main')}</a></li>
+                        <li className="header__item"><a href="#about" className="header__link link">{t('nav.about')}</a></li>
+                        <li className="header__item"><a href="#services" className="header__link link">{t('nav.services')}</a></li>
+                        <li className="header__item"><a href="#tech" className="header__link link">{t('nav.tech')}</a></li>
+                        <li className="header__item"><a href="#portfolio" className="header__link link">{t('nav.portfolio')}</a></li>
+                        <li className="header__item"><a href="#contacts" className="header__link link">{t('nav.contacts')}</a></li>
                     </ul>
                 </nav>
 
                 <div className="header__control df aic g20 fww">
                     <button className="header__btn" onClick={handleShow}>
-                        {isShow ? 'Закрыть' : <img src={MenuIcon} alt="Кнопка меню" className="header__icon" />}
+                        {isShow ? `${t('spectialBtnAndImg.burgerUnAct')}` : <img src={MenuIcon} alt={t('spectialBtnAndImg.burgerAct')} className="header__icon" />}
                     </button>
 
                     {isShow && (
                         <ul className="header__menu fdc g20 fww block">
-                            <li className="header__item"><a onClick={handleShow} href="#main" className="header__link link">Привет</a></li>
-                            <li className="header__item"><a onClick={handleShow} href="#about" className="header__link link">Обо мне</a></li>
-                            <li className="header__item"><a onClick={handleShow} href="#services" className="header__link link">Услуги</a></li>
-                            <li className="header__item"><a onClick={handleShow} href="#tech" className="header__link link">Технологии</a></li>
-                            <li className="header__item"><a onClick={handleShow} href="#portfolio" className="header__link link">Портфолио</a></li>
-                            <li className="header__item"><a onClick={handleShow} href="#contacts" className="header__link link">Контакты</a></li>
+                            <li className="header__item"><a onClick={handleShow} href="#main" className="header__link link">{t('nav.main')}</a></li>
+                            <li className="header__item"><a onClick={handleShow} href="#about" className="header__link link">{t('nav.about')}</a></li>
+                            <li className="header__item"><a onClick={handleShow} href="#services" className="header__link link">{t('nav.services')}</a></li>
+                            <li className="header__item"><a onClick={handleShow} href="#tech" className="header__link link">{t('nav.tech')}</a></li>
+                            <li className="header__item"><a onClick={handleShow} href="#portfolio" className="header__link link">{t('nav.portfolio')}</a></li>
+                            <li className="header__item"><a onClick={handleShow} href="#contacts" className="header__link link">{t('nav.contacts')}</a></li>
                         </ul>
                     )}
-                    <select className="header__selectLang" defaultValue="russian" name="select">
-                        <option className="header__optionLang" value="russian">RU</option>
-                        <option className="header__optionLang" value="english">EN</option>
+                    <select className="header__selectLang" value={lang} onChange={(e) => setLang(e.target.value)} name="select">
+                        <option className="header__optionLang" value="ru">RU</option>
+                        <option className="header__optionLang" value="en">EN</option>
                     </select>
                 </div>
             </div>

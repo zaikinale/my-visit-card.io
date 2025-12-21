@@ -1,44 +1,52 @@
 import '../assets/styles/main.scss'
 import '../assets/styles/portfolio.scss'
+import {useLanguage} from "../i18n/LanguageContext.jsx";
 
 export default function Portfolio() {
+    const { t, lang } = useLanguage();
     return (
         <section id="portfolio" className="portfolio">
-            <h2 className="portfolio__title">Мои проекты</h2>
+            <h2 className="portfolio__title">{t('portfolio.title')}</h2>
             <div className="container df fdc aic g20">
                 <a href="https://github.com/zaikinale/shop-react_with_backend.io" target="_blank"
                    className="portfolio__card df fdc aic block">
                     <img className="portfolio__img" src="https://via.placeholder.com/600x300/667eea/ffffff?text=Интернет-магазин"
-                         alt="Интернет-магазин"/>
+                         alt={t('portfolio.projects.shop.title')}/>
                     <div className="portfolio__info">
-                        <h3>Интернет-магазин с бэкендом</h3>
-                        <p>Полноценный e-commerce сайт: каталог, карточки товара, отзывы, авторизация.<br/> Frontend - React + TypeScript, Backend - Node.js + PostgreSQL.</p>
+                        <h2>{t('portfolio.projects.shop.title')}</h2>
+                        <h4>{t('portfolio.projects.shop.subtitle')}</h4>
+                        <p>{t('portfolio.projects.shop.description')}</p>
+                        <p>{t('portfolio.projects.shop.tech')}</p>
                     </div>
                 </a>
 
                 <a href="https://github.com/zaikinale/loyalty-telegram-app" target="_blank" className="portfolio__card df fdc aic block">
                     <img className="portfolio__img" src="https://via.placeholder.com/600x300/764ba2/ffffff?text=Система+лояльности"
-                         alt="Система лояльности"/>
+                         alt={t('portfolio.projects.loyalty.title')}/>
                     <div className="portfolio__info">
-                        <h3>Система лояльности для кофеен</h3>
-                        <p>Веб-интерфейс админки для Telegram-бота: управление клиентами, острудниками, бонусами и уведомлениями.<br/>Реализовано с использованием Vue, SCSS (БЭМ), FastAPI, Python.</p>
+                        <h2>{t('portfolio.projects.loyalty.title')}</h2>
+                        <h4>{t('portfolio.projects.loyalty.subtitle')}</h4>
+                        <p>{t('portfolio.projects.loyalty.description')}</p>
+                        <p>{t('portfolio.projects.loyalty.tech')}</p>
                     </div>
                 </a>
 
                 <a href="https://github.com/zaikinale/task-manager-react" target="_blank" className="portfolio__card df fdc aic block">
                     <img className="portfolio__img" src="https://via.placeholder.com/600x300/4b6cb7/ffffff?text=Менеджер+задач"
-                         alt="Менеджер задач"/>
+                         alt={t('portfolio.projects.tasks.title')}/>
                     <div className="portfolio__info">
-                        <h3>Task Manager</h3>
-                        <p>Приложение для учёта задач с поддержкой статусов и дедлайнов.<br/> Использованы React, Zustand для состояния, localStorage для хранения данных.</p>
+                        <h2>{t('portfolio.projects.tasks.title')}</h2>
+                        <h4>{t('portfolio.projects.tasks.subtitle')}</h4>
+                        <p>{t('portfolio.projects.tasks.description')}</p>
+                        <p>{t('portfolio.projects.tasks.tech')}</p>
                     </div>
                 </a>
 
                 <a href="https://github.com/zaikinale" target="_blank" className="portfolio__card df fdc aic block">
                     <img className="portfolio__img" src="https://via.placeholder.com/600x300/4b6cb7/ffffff?text=Менеджер+задач"
-                         alt="Классные проекты"/>
+                         alt={t('portfolio.more.title')}/>
                     <div className="portfolio__info">
-                        <h3 className='link'>Другие классные проекты у меня на GitHub ↗</h3>
+                        <h3 className='link'>{t('portfolio.more.subtitle')}</h3>
                     </div>
                 </a>
             </div>
