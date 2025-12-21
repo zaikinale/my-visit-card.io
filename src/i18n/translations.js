@@ -2,11 +2,11 @@ export const translations = {
     ru: {
         spectialBtnAndImg: {
             burgerAct: 'Кнопка Бургер-меню',
-            burgerUnAct: 'Закрыть',
+            burgerUnAct: '✕ Закрыть',
             mainImg: 'Фото разработчика Заикина Алексея Сергеевича'
         },
         nav: {
-            main: 'Привет',
+            // main: 'Привет',
             about: 'Обо мне',
             services: 'Услуги',
             tech: 'Технологии',
@@ -89,11 +89,11 @@ export const translations = {
     en: {
         spectialBtnAndImg: {
             burgerAct: 'Button burger-menu',
-            burgerUnAct: 'Close',
+            burgerUnAct: '✕ Close',
             mainImg: 'Photo by developer Alexey Zaikin'
         },
         nav: {
-            main: 'Hi',
+            // main: 'Hi',
             about: 'About me',
             services: 'Services',
             tech: 'Technologies',

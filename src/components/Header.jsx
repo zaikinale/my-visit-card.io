@@ -25,7 +25,7 @@ export default function Header() {
 
                 <nav className="header__nav">
                     <ul className="header__list df aic g20 fww">
-                        <li className="header__item"><a href="#main" className="header__link link">{t('nav.main')}</a></li>
+                        {/*<li className="header__item"><a href="#main" className="header__link link">{t('nav.main')}</a></li>*/}
                         <li className="header__item"><a href="#about" className="header__link link">{t('nav.about')}</a></li>
                         <li className="header__item"><a href="#services" className="header__link link">{t('nav.services')}</a></li>
                         <li className="header__item"><a href="#tech" className="header__link link">{t('nav.tech')}</a></li>
@@ -35,13 +35,13 @@ export default function Header() {
                 </nav>
 
                 <div className="header__control df aic g20 fww">
-                    <button className="header__btn" onClick={handleShow}>
+                    <button className="header__btn link--menu" onClick={handleShow}>
                         {isShow ? `${t('spectialBtnAndImg.burgerUnAct')}` : <img src={MenuIcon} alt={t('spectialBtnAndImg.burgerAct')} className="header__icon" />}
                     </button>
 
                     {isShow && (
                         <ul className="header__menu fdc g20 fww block">
-                            <li className="header__item"><a onClick={handleShow} href="#main" className="header__link link">{t('nav.main')}</a></li>
+                            {/*<li className="header__item"><a onClick={handleShow} href="#main" className="header__link link">{t('nav.main')}</a></li>*/}
                             <li className="header__item"><a onClick={handleShow} href="#about" className="header__link link">{t('nav.about')}</a></li>
                             <li className="header__item"><a onClick={handleShow} href="#services" className="header__link link">{t('nav.services')}</a></li>
                             <li className="header__item"><a onClick={handleShow} href="#tech" className="header__link link">{t('nav.tech')}</a></li>
