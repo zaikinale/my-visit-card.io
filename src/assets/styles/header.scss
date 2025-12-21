@@ -6,6 +6,7 @@
   background-color: var(--color-border-dark);
   z-index: 1000;
 }
+
 .header__logo {
   width: 40px;
   height: 40px;
@@ -17,8 +18,8 @@
 }
 
 .header__icon {
-  width: 36px;
-  height: 36px;
+  width: 25px;
+  height: 25px;
   object-fit: contain;
 }
 
@@ -41,6 +42,7 @@
   top: 50px;
   left: 0px;
 }
+
 .header__menu >* {
   text-align: start;
 }
@@ -50,6 +52,7 @@
   .header__nav {
     display: none;
   }
+
   .header__btn {
     display: block;
   }
